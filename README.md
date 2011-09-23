@@ -14,6 +14,8 @@ For the all files from MML directory:
 For the single file (without *.miz extension):
 <pre>python redefth.py -f filename</pre>
 
+Remember to set up mmlPath, everylabPath and textPath inside of the script.
+
 Requirments:
 ============
 [Mizar 7.12+](http://mizar.org/), [Python 2.5+](http://python.org/), [lxml 2.3+](http://lxml.de/), everylab (which is not included with Mizar binary files)
