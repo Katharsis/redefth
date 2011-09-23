@@ -15,7 +15,7 @@ mmlPath = "/usr/local/share/mizar/mml"
 everylabPath = "./everylab"
 
 # Sets text directory path
-textPath = "/home/katharsis/UwB/Mizar/text"
+textPath = "/home/katharsis/UwB/Mizar/text" # Remember to change it yourself
 
 def sortBySize(mmllist):
     """Sorts the files from mml directory according to their size and returns a new list of files"""
