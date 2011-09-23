@@ -18,7 +18,7 @@ everylabPath = "./everylab"
 textPath = "/home/katharsis/UwB/Mizar/text" # Remember to change it yourself
 
 def sortBySize(mmllist):
-    """Sorts the files from mml directory according to their size and returns a new list of files"""
+    """ Sorts the files from mml directory according to their size and returns a new list of files """
     sortedMML = []
 
     for x in mmllist:
@@ -30,7 +30,7 @@ def sortBySize(mmllist):
     return sortedMML
 
 def redefineTh(mmlFile):
-    """Sets unique (label) number for all theorems in *.miz file"""
+    """ Sets unique (label) number for all theorems in *.miz file """
     elfPath = mmlFile.replace(".miz", ".$-$")
 
     shutil.copyfile("%s/%s" % (mmlPath, mmlFile), "%s/%s" % (textPath, mmlFile))
@@ -44,7 +44,7 @@ def redefineTh(mmlFile):
     os.rename("%s/%s" % (textPath, elfPath), "%s/%s" % (textPath, mmlFile))
 
 def cleanup():
-    """Deletes all files from text directory without *.miz files"""
+    """ Deletes all files from text directory without *.miz files """
     currentDirectory = os.listdir(textPath)
 
     tempfiles = [x for x in currentDirectory if x.split(".")[1] == "miz"]
