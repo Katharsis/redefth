@@ -16,4 +16,4 @@ For the single file (without *.miz extension):
 
 Requirments:
 ============
-[Mizar 7.12+](http://mizar.org/), [Python 2.5+](http://python.org/), [lxml 2.3+](http://lxml.de/)
+[Mizar 7.12+](http://mizar.org/), [Python 2.5+](http://python.org/), [lxml 2.3+](http://lxml.de/), everylab (which is not included with Mizar binary files)
